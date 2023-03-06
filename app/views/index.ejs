@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1 class="Title">Danh sách sản phẩm</h1>
+    <% for (let item of product){%>
+    <div class="product-item"> Mã sản phẩm: <%=item.product_id%> <br>
+        Tên sản phẩm: <%=item.product_name %> <br>
+        Giá: <%=item.price %> USD <br>
+        Loại sản phẩm: <%=item.category_id %> <br>
+        <img width="100px" src="<%=item.image %>" alt=""> </div>
+    <% } %>
+</body>
+</html>
